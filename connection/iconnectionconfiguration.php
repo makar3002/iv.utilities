@@ -1,7 +1,7 @@
 <?php
 namespace Connection;
 
-interface ConnectionConfiguration
+interface IConnectionConfiguration
 {
     /**
      * Возвращает адрес подключения к БД.
