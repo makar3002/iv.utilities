@@ -13,10 +13,10 @@ class MysqliConnection implements IConnection
     /**
      * Устанавливает соединение с БД.
      *
-     * @param ConnectionConfiguration $config
+     * @param IConnectionConfiguration $config
      * @throws SqlConnectionException
      */
-    public function connect(ConnectionConfiguration $config)
+    public function connect(IConnectionConfiguration $config)
     {
         $this->connection = new \mysqli(
             $config->getHost(),

@@ -3,7 +3,7 @@ namespace Connection;
 
 interface IConnection
 {
-    public function connect(ConnectionConfiguration $config);
+    public function connect(IConnectionConfiguration $config);
 
     public function close();
 
