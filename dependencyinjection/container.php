@@ -38,8 +38,8 @@ class Container
     {
         $identifier = $this->resolveAlias($identifier);
 
-        if ($this->definitions->has($identifier)) {
-            return $this->definitions->get($identifier);
+        if ($this->objectCache->has($identifier)) {
+            return $this->objectCache->get($identifier);
         }
 
         return $this->create($identifier);
