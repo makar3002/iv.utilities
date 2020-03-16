@@ -32,6 +32,7 @@ class Container
     {
         $identifier = $this->resolveAlias($identifier);
         $this->definitions->set($identifier, $parameters);
+        $this->dependencyTree->set($identifier, array_keys($parameters));
     }
 
     public function get($identifier)
